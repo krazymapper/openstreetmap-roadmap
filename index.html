@@ -18,6 +18,9 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         h1, h2 {
             text-align: center;
@@ -39,6 +42,9 @@
         .step-content {
             flex: 1;
             padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         .step img {
             width: 150px;
@@ -73,29 +79,36 @@
 </head>
 <body>
     <div class="container">
-        <h1>Devenez un Expert en Cartographie avec OpenStreetMap</h1>
+        <h1><img src="https://www.openstreetmap.org/assets/osm_logo-4b074077c29e100f40ee64f5177886e36b570d4cc3ab10c7b263003d09642e3f.svg" alt="OpenStreetMap Logo" style="width: 50px; vertical-align: middle;"> Devenez un Expert en Cartographie avec OpenStreetMap</h1>
         <h2>Votre roadmap en 5 étapes :</h2>
 
         <div class="step" id="step1">
             <div class="step-content">
                 <h3>Étape 1 : Découvrir OpenStreetMap</h3>
                 <p>Créez un compte gratuitement et explorez les fonctionnalités de base.</p>
+                <p><a href="https://www.openstreetmap.org/user/new" target="_blank">Créer un compte maintenant</a></p>
             </div>
-            <img src="https://via.placeholder.com/150" alt="Découvrir OpenStreetMap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/OpenStreetMap_circle.svg/160px-OpenStreetMap_circle.svg.png" alt="Découvrir OpenStreetMap">
         </div>
 
         <div class="step" id="step2">
             <div class="step-content">
                 <h3>Étape 2 : Comprendre les principes de la cartographie</h3>
                 <p>Apprenez les éléments clés : bâtiments, routes, POI, et suivez des tutoriels interactifs.</p>
+                <p><a href="http://write.flossmanuals.net/openstreetmap-fr/decouvrir-la-cartographie-collaborative/" target="_blank">Lire "Découvrir la cartographie collaborative"</a></p>
             </div>
-            <img src="https://via.placeholder.com/150" alt="Principes de la cartographie">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/World-edit_icon.svg/160px-World-edit_icon.svg.png" alt="Principes de la cartographie">
         </div>
 
         <div class="step" id="step3">
             <div class="step-content">
                 <h3>Étape 3 : Pratiquez en éditant une carte</h3>
-                <p>Ajoutez des données locales et corrigez les erreurs sur la carte.</p>
+                <p>Ajoutez des données locales et corrigez les erreurs sur la carte. Essayez les outils populaires :</p>
+                <ul>
+                    <li><a href="https://www.openstreetmap.org/login?referer=%2Fedit%3Feditor%3Did" target="_blank">ID Editor</a></li>
+                    <li><a href="https://wiki.openstreetmap.org/wiki/JOSM" target="_blank">JOSM</a> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/JOSM_Logotype_2019.svg/200px-JOSM_Logotype_2019.svg.png" alt="Logo JOSM" style="width: 50px; vertical-align: middle;"></li>
+                    <li>Rapid ID avec l'IA <img src="https://wiki.openstreetmap.org/w/images/thumb/8/87/Rapid_logo_64_Pixel.svg/200px-Rapid_logo_64_Pixel.svg.png" alt="Logo Rapid ID" style="width: 50px; vertical-align: middle;"></li>
+                </ul>
             </div>
             <img src="https://via.placeholder.com/150" alt="Éditer une carte">
         </div>
@@ -104,6 +117,7 @@
             <div class="step-content">
                 <h3>Étape 4 : Participez à des projets communautaires</h3>
                 <p>Rejoignez des initiatives humanitaires et contribuez à l'amélioration des données globales.</p>
+                <p><a href="https://github.com/osmlab/awesome-openstreetmap" target="_blank">Explorez les projets impressionnants</a></p>
             </div>
             <img src="https://via.placeholder.com/150" alt="Projets communautaires">
         </div>
@@ -112,6 +126,7 @@
             <div class="step-content">
                 <h3>Étape 5 : Devenez un expert</h3>
                 <p>Explorez des outils avancés et formez d'autres contributeurs.</p>
+                <p>Ne manquez pas la conférence "State of the Map (SOTM)" pour rencontrer la communauté internationale.</p>
             </div>
             <img src="https://via.placeholder.com/150" alt="Devenir un expert">
         </div>
