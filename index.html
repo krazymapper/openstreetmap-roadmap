@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenStreetMap Roadmap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .step:hover {
+            transform: scale(1.05);
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .step-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .step img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta a {
+            padding: 10px 20px;
+            background: #e67e22;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+        .cta a:hover {
+            background: #d35400;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .step {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Devenez un Expert en Cartographie avec OpenStreetMap</h1>
+        <h2>Votre roadmap en 5 étapes :</h2>
+
+        <div class="step" id="step1">
+            <div class="step-content">
+                <h3>Étape 1 : Découvrir OpenStreetMap</h3>
+                <p>Créez un compte gratuitement et explorez les fonctionnalités de base.</p>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Découvrir OpenStreetMap">
+        </div>
+
+        <div class="step" id="step2">
+            <div class="step-content">
+                <h3>Étape 2 : Comprendre les principes de la cartographie</h3>
+                <p>Apprenez les éléments clés : bâtiments, routes, POI, et suivez des tutoriels interactifs.</p>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Principes de la cartographie">
+        </div>
+
+        <div class="step" id="step3">
+            <div class="step-content">
+                <h3>Étape 3 : Pratiquez en éditant une carte</h3>
+                <p>Ajoutez des données locales et corrigez les erreurs sur la carte.</p>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Éditer une carte">
+        </div>
+
+        <div class="step" id="step4">
+            <div class="step-content">
+                <h3>Étape 4 : Participez à des projets communautaires</h3>
+                <p>Rejoignez des initiatives humanitaires et contribuez à l'amélioration des données globales.</p>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Projets communautaires">
+        </div>
+
+        <div class="step" id="step5">
+            <div class="step-content">
+                <h3>Étape 5 : Devenez un expert</h3>
+                <p>Explorez des outils avancés et formez d'autres contributeurs.</p>
+            </div>
+            <img src="https://via.placeholder.com/150" alt="Devenir un expert">
+        </div>
+
+        <div class="cta">
+            <a href="https://www.openstreetmap.org" target="_blank">Rejoignez-nous dès aujourd'hui !</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.style.opacity = '1';
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
